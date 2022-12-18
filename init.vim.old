@@ -1,0 +1,32 @@
+:set number
+:set relativenumber
+:set tabstop=4
+:set shiftwidth=4
+:set softtabstop=4
+:set mouse=a
+:set expandtab
+
+call plug#begin()
+
+Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/preservim/nerdtree'
+Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/tpope/vim-commentary'
+Plug 'https://github.com/ap/vim-css-color'
+Plug 'https://github.com/rafi/awesome-vim-colorschemes'
+Plug 'https://github.com/styled-components/vim-styled-components'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+
+source ~/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/iceberg.vim
+
+call plug#end()
+
+" toggle NERDTree
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+" toggle search highlight
+set hlsearch!
+nnoremap <F3> :set hlsearch!<CR>
+
